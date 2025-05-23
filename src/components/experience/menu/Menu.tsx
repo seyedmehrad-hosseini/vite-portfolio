@@ -20,7 +20,7 @@ export const Menu = ({
     flag: false,
   });
 
-  const menuItemHandleChange = (id = 0, sectionNumber = 0) => {
+  const menuItemHandleChange = (id = "01", sectionNumber = 0) => {
     setMenuOpened(false);
     setTransitionPageFlag({ rerenderMotionId: id, flag: true });
     onSectionChange(sectionNumber);

@@ -1,13 +1,12 @@
 
 import './App.css'
-import Experience from './components/experience'
-import Test from './components/experience'
+import Experience from './components/experience/Canvas'
 
 function App() {
 
   return (
     <>
-    <Test />
+    <Experience />
     </>
   )
 }

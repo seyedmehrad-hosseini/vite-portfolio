@@ -9,6 +9,7 @@ import MyLanguageContextProvider from "@/context/languageContext";
 import { Interface } from "./interface/Interface";
 
 import { ScrollManager } from "./scrollManger/scrollManger";
+import { Menu } from "./menu/Menu";
 
 const Experience = () => {
   const [section, setSection] = useState(0);
@@ -35,8 +36,8 @@ const Experience = () => {
           <color attach="background" args={["#e6e7ff"]} />
           <ScrollControls pages={4} damping={0.1}>
             <ScrollManager section={section} onSectionChange={setSection} />
-            <Scroll>
-              {/* <MyLanguageContextProvider
+            {/* <Scroll>
+              <MyLanguageContextProvider
                 value={{ languagechange, setLanguagechange }}
               >
                 <ExperienceMain
@@ -44,15 +45,15 @@ const Experience = () => {
                   section={section}
                   menuOpened={menuOpened}
                 />
-              </MyLanguageContextProvider> */}
-            </Scroll>
-            <Scroll html>
+              </MyLanguageContextProvider>
+            </Scroll> */}
+            {/* <Scroll html> */}
               <MyLanguageContextProvider
                 value={{ languagechange, setLanguagechange }}
               >
                 <Interface setSection={setSection} />
               </MyLanguageContextProvider>
-            </Scroll>
+            {/* </Scroll> */}
           </ScrollControls>
         </Canvas>
 
